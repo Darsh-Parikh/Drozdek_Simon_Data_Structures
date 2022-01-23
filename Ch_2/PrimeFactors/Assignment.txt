@@ -1,0 +1,2 @@
+Create a dynamic programming solution for finding the prime factorizations of 
+all the integers from 1 to 1000.

@@ -1,0 +1,23 @@
+Abstractions through an ADT (Abstract data type) database
+
+stuff the database always does:
+1) int findRec(dbkeytype key, dbdatatype* data, indextype* idx);
+    Looks up key in the simple database. If a record with that key exists, 
+    findRec returns 1, data is teh data of the recod, and idx is an indicator 
+    of where the record is stored. If not record is dound, then findRec returns 
+    0, idx is an indicator of where the data should be put, and the data is 
+    undefined.
+
+2) int createRec(dbkeytype key, dbdatatype data, indextype idx);
+    idx should indicate where the new record is to go.
+    Adds a new record with key and data to hte simple database.
+    Returns 1 for success, 0 for failure (databse is full).
+
+3) void setRec(indextype idx, dbdatatype data);
+    idx should indicate where the new recod should go.
+    Changes the data of the record indicated by idx to be data.
+
+4) void eachRec(void (*fn)(dbkeytype key, dbdatatype data));
+    Applies the functon fn to each record (using key and data) in the database.
+
+stuff in an ADT list:

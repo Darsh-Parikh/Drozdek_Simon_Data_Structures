@@ -1,0 +1,38 @@
+1)
+Implement a set using linked lists. The set contains the usual set
+operations: union, intersection, set difference, subset, and a membership test
+for elements. The important differences between a set and a list are that a list
+can contain te same element more than one time but an element only occurs once 
+in a set, and that the order or the elements in a set is unimportant. Assuming
+that it is possible to order the elements, would an ordered linked list be more 
+effecient than an unordered one? Give the asymptotic running times for your 
+operations.
+
+2)
+A multiset or a bag is like a set except that it can contain more than one copy 
+of the same element; (B, A, A, B, A, C) is a multiset. It is similar to a list 
+except that the order of the elements is unimportant so that the previous
+multiset is the same as (A, A, A, B, B, C). The multiset ADT contains the 
+following operations: union, intersection, multiset difference, subset, and 
+membership. These operations respect the number od times an element is in the 
+multiset. Implement the multiset using linked lists.
+
+-------------------------------------------------------------------------------
++++++++++++++++++++++++++++++++ SET MATH ++++++++++++++++++++++++++++++++++++++
+Assume A = {1, 5, 300, 39, 4} & B = {1, 903, 59, 39, 4, 5, 1004, 50, 300}
+A u B = {1, 5, 300, 39, 4 903, 59, 1004, 50} = B u A
+A i B = {1, 5, 300, 39, 4} = B i A
+A - B = { }; B - A = {903, 59, 1004, 50}
+A s B = True; B s A = False
+
+-------------------------------------------------------------------------------
++++++++++++++++++++++++++++++ MULTISET MATH +++++++++++++++++++++++++++++++++++
+Assume A = { } & B = { }
+
+
+-------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++ IDEAS ++++++++++++++++++++++++++++++++++++++++
+
+List of setEntry { val, count }
+    count = 1 for Set; count >= 1 for MultiSet
+

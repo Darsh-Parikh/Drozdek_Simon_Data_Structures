@@ -1,0 +1,10 @@
+Implement a solution of the missionary and cannibals roblem for the cae where 
+there are 3 missionaries and 4 cannibals.
+
+-------------------------------------------------------------------------------
+++++++++++++++++++ MISSIONARY AND CANNIBAL PROBELM ++++++++++++++++++++++++++++
+
+Desciption here...
+
+
+------------------------------------------------------------------------------
